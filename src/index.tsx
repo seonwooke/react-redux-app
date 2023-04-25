@@ -13,11 +13,6 @@ const root = ReactDOM.createRoot(
 
 const store = createStore(rootReducer);
 
-store.dispatch({
-  type: "ADD_TODO",
-  text: "USER REDUX"
-})
-
 const render = () => root.render(
   <React.StrictMode>
     <Provider store={store}>
